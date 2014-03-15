@@ -1,0 +1,13 @@
+# Sample of request extensions configuration
+#
+# This file is specified by variable ``req_extfile'', ``req_extensions''
+# of main configuration file ``conf.file''.
+#
+
+[ x509_extensions ]
+
+subjectKeyIdentifier=hash
+authorityKeyIdentifier=keyid:always,issuer:always
+basicConstraints = critical, CA:true, pathlen:1
+
+keyUsage = critical, cRLSign, keyCertSign

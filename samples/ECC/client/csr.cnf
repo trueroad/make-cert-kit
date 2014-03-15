@@ -1,0 +1,21 @@
+# -*- coding: utf-8 -*-
+#
+# Sample of CSR configuration file
+#
+# This file is specified by variable ``csr_conffile''
+# of main configuration file ``conf.file''.
+#
+
+[ req ]
+distinguished_name     = req_distinguished_name
+prompt                 = no
+utf8		       = yes
+
+[ req_distinguished_name ]
+C                      = JP
+ST                     = 州名・都道府県名
+L                      = 都市名
+O                      = 団体名
+OU                     = 組織名
+CN                     = Test Client Certificate ECC
+emailAddress	       = client@example.com

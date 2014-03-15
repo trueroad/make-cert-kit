@@ -1,0 +1,18 @@
+# Sample of request extensions configuration file
+#
+# This file is specified by variable ``req_extfile'', ``req_extensions''
+# of main configuration file ``conf.file''.
+#
+
+[ x509_extensions ]
+
+basicConstraints=CA:FALSE
+
+keyUsage = digitalSignature
+
+extendedKeyUsage = serverAuth, clientAuth
+
+subjectKeyIdentifier=hash
+authorityKeyIdentifier=keyid,issuer:always
+
+subjectAltName=DNS:www.example.com
