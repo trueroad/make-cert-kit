@@ -2,7 +2,7 @@
 
 .PHONY:	all clean
 
-all:	ECC/all
-clean:	ECC/clean
+all:	ECC/all DSA1024/all
+clean:	ECC/clean DSA1024/clean
 
 include ../tools/common.mk
