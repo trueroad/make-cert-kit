@@ -1,0 +1,31 @@
+# Sample of CA configuration file
+#
+# This file is specified by variable ``ca_conffile''
+# of main configuration file ``conf.file''.
+#
+
+[ ca ]
+
+default_ca      = CA_default
+
+[ CA_default ]
+
+database        = index.txt		# Fixed. Do not change.
+serial          = serial		# Fixed. Do not change.
+
+default_md      = sha1
+
+unique_subject	= no
+
+default_days	= 365
+
+policy          = policy_anything
+
+[ policy_anything ]
+countryName             = optional
+stateOrProvinceName     = optional
+localityName            = optional
+organizationName        = optional
+organizationalUnitName  = optional
+commonName              = supplied
+emailAddress            = optional
