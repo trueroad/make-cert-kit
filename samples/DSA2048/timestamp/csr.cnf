@@ -1,0 +1,20 @@
+# -*- coding: utf-8 -*-
+#
+# Sample of CSR configuration file
+#
+# This file is specified by variable ``csr_conffile''
+# of main configuration file ``conf.file''.
+#
+
+[ req ]
+distinguished_name     = req_distinguished_name
+prompt                 = no
+#utf8		       = yes
+
+[ req_distinguished_name ]
+C                      = JP
+ST                     = Some-State
+L                      = Some-City
+O                      = Some-Company
+OU                     = Some-Section
+CN                     = Test Timestamping Certificate DSA (2048, 256) with SHA-256
